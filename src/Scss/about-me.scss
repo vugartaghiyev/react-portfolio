@@ -1,0 +1,22 @@
+.About-Me {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10rem 0;
+
+  &__Pic {
+    width: 50%;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__Text {
+    width: 50%;
+    color: #8b95a1;
+    font-size: 2rem;
+    line-height: 4rem;
+    padding: 0 3rem;
+  }
+}

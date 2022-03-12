@@ -1,0 +1,94 @@
+.Skills {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 10rem 0;
+}
+.Skills .Skill {
+  width: 34rem;
+  height: 25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.8rem;
+  -webkit-border-radius: 0.8rem;
+  -moz-border-radius: 0.8rem;
+  -ms-border-radius: 0.8rem;
+  -o-border-radius: 0.8rem;
+  position: relative;
+}
+.Skills .Skill__Icon {
+  font-size: 10rem;
+}
+.Skills .Skill__Name {
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin-top: 1rem;
+}
+.Skills .Skill__Hover {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, black, #70ac7f62);
+  color: white;
+  font-size: 2rem;
+  opacity: 0;
+  transition: 0.3s ease-out;
+  -webkit-transition: 0.3s ease-out;
+  -moz-transition: 0.3s ease-out;
+  -ms-transition: 0.3s ease-out;
+  -o-transition: 0.3s ease-out;
+  border-radius: 0.8rem;
+  -webkit-border-radius: 0.8rem;
+  -moz-border-radius: 0.8rem;
+  -ms-border-radius: 0.8rem;
+  -o-border-radius: 0.8rem;
+  overflow: hidden;
+}
+.Skills .Skill__Hover-Content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(100px);
+  -webkit-transform: translateY(100px);
+  -moz-transform: translateY(100px);
+  -ms-transform: translateY(100px);
+  -o-transform: translateY(100px);
+  transition: 0.3s ease-in;
+  -webkit-transition: 0.3s ease-in;
+  -moz-transition: 0.3s ease-in;
+  -ms-transition: 0.3s ease-in;
+  -o-transition: 0.3s ease-in;
+}
+.Skills .Skill__Hover img {
+  width: 2.5rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+.Skills .Skill__Hover:hover {
+  opacity: 1;
+  transition: 0.3s ease-out;
+  -webkit-transition: 0.3s ease-out;
+  -moz-transition: 0.3s ease-out;
+  -ms-transition: 0.3s ease-out;
+  -o-transition: 0.3s ease-out;
+  box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.3);
+}
+.Skills .Skill__Hover:hover .Skill__Hover-Content {
+  transform: translateY(0);
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+}
+
+/*# sourceMappingURL=skills.css.map */

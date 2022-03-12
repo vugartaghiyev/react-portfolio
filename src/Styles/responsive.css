@@ -1,0 +1,82 @@
+@media screen and (max-width: 1366px) {
+  html {
+    font-size: 9px !important;
+  }
+}
+@media screen and (max-width: 992px) {
+  html {
+    font-size: 8px !important;
+  }
+
+  .Initial__Content {
+    padding-top: 20rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .Header__Menu {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    background: var(--main-color);
+    flex-direction: column;
+    padding: 0;
+    display: none;
+  }
+  .Header__Menu-Item {
+    margin: 0;
+  }
+  .Header__Menu-Item:hover {
+    color: white;
+  }
+  .Header__Menu a {
+    color: white;
+    padding: 1rem;
+    width: 100%;
+  }
+  .Header__Menu a:hover {
+    color: var(--main-color);
+    background: white;
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+  }
+  .Header__Menu-Icon {
+    display: block;
+  }
+
+  .Initial__Content {
+    padding-top: 18rem;
+  }
+  .Initial__Content-Left {
+    width: 100%;
+  }
+  .Initial__Content-Right {
+    display: none;
+  }
+
+  .About-Me {
+    flex-direction: column;
+  }
+  .About-Me__Pic {
+    width: 100%;
+    padding: 0 4rem;
+  }
+  .About-Me__Text {
+    width: 100%;
+    padding: 0 4rem;
+  }
+
+  .Contact {
+    flex-direction: column;
+  }
+  .Contact__Text {
+    width: 100%;
+  }
+  .Contact__Inputs {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=responsive.css.map */

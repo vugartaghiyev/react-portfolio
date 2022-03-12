@@ -1,0 +1,192 @@
+.Initial {
+  height: 100vh;
+  position: relative;
+  &__Content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 4vh;
+    &-Left {
+      width: 50%;
+    }
+    &-Right {
+      width: 50%;
+      img {
+        width: 100%;
+        animation-name: initial-img;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+      }
+
+      @keyframes initial-img {
+        0% {
+          transform: scale(0.95);
+          -webkit-transform: scale(0.95);
+          -moz-transform: scale(0.95);
+          -ms-transform: scale(0.95);
+          -o-transform: scale(0.95);
+        }
+        100% {
+          transform: scale(1);
+          -webkit-transform: scale(1);
+          -moz-transform: scale(1);
+          -ms-transform: scale(1);
+          -o-transform: scale(1);
+        }
+      }
+    }
+
+    &-Hello {
+      font-family: "Staatliches", cursive;
+      font-size: 7rem;
+      letter-spacing: 0.8rem;
+    }
+
+    &-Owner {
+      margin-top: 1rem;
+      font-family: "Staatliches", cursive;
+      font-size: 10rem;
+      line-height: 10rem;
+      letter-spacing: 0.5rem;
+      span {
+        color: var(--main-color);
+      }
+    }
+
+    &-Job {
+      font-size: 5rem;
+      margin-top: 1rem;
+    }
+
+    &-Desc {
+      color: #8b95a1;
+      font-size: 2rem;
+      margin-top: 1rem;
+      max-width: 60rem;
+    }
+
+    &-Cv {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      width: 30rem;
+      height: 5rem;
+      font-size: 2rem;
+      color: white;
+      border-radius: 0.8rem;
+      -webkit-border-radius: 0.8rem;
+      -moz-border-radius: 0.8rem;
+      -ms-border-radius: 0.8rem;
+      -o-border-radius: 0.8rem;
+      font-weight: 300;
+      background: var(--main-color);
+      border: none;
+      outline: none;
+      margin-top: 3rem;
+      transition: 0.2s ease-in;
+      -webkit-transition: 0.2s ease-in;
+      -moz-transition: 0.2s ease-in;
+      -ms-transition: 0.2s ease-in;
+      -o-transition: 0.2s ease-in;
+      cursor: pointer;
+      &:hover {
+        transition: 0.2s ease-in;
+        transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        -o-transform: scale(1.1);
+        -webkit-transition: 0.2s ease-in;
+        -moz-transition: 0.2s ease-in;
+        -ms-transition: 0.2s ease-in;
+        -o-transition: 0.2s ease-in;
+        font-weight: 500;
+        background: transparent;
+        border: 1px solid var(--main-color);
+        color: var(--main-color);
+      }
+    }
+  }
+
+  &__Media {
+    position: absolute;
+    bottom: 20px;
+    left: 3rem;
+
+    &-Item {
+      margin-right: 5px;
+      cursor: pointer;
+      display: inline-block;
+      transition: 0.2s;
+      -webkit-transition: 0.2s;
+      -moz-transition: 0.2s;
+      -ms-transition: 0.2s;
+      -o-transition: 0.2s;
+      img {
+        width: 20px;
+      }
+
+      &:hover {
+        transition: 0.2s;
+        transform: scale(1.5);
+        -webkit-transform: scale(1.5);
+        -moz-transform: scale(1.5);
+        -ms-transform: scale(1.5);
+        -o-transform: scale(1.5);
+        -webkit-transition: 0.2s;
+        -moz-transition: 0.2s;
+        -ms-transition: 0.2s;
+        -o-transition: 0.2s;
+      }
+    }
+  }
+}
+
+.Scroll__Container {
+  width: 30px;
+  height: 60px;
+  border: 3px solid var(--main-color);
+  border-radius: 15px;
+  position: absolute;
+  bottom: 2%;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+
+.Scroller {
+  width: 16px;
+  border-radius: 8px;
+  background-color: var(--main-color);
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  bottom: 34px;
+  animation: scroller 1500ms ease-out infinite;
+  -webkit-animation: scroller 1500ms ease-out infinite;
+}
+
+@keyframes scroller {
+  0% {
+    bottom: 34px;
+  }
+  5% {
+    top: 4px;
+  }
+  32% {
+    bottom: 4px;
+  }
+  66% {
+    top: 34px;
+    bottom: 4px;
+  }
+  100% {
+    top: 4px;
+    bottom: 34px;
+  }
+}

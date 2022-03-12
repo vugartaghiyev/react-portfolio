@@ -1,0 +1,21 @@
+.About-Me {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10rem 0;
+}
+.About-Me__Pic {
+  width: 50%;
+}
+.About-Me__Pic img {
+  width: 100%;
+}
+.About-Me__Text {
+  width: 50%;
+  color: #8b95a1;
+  font-size: 2rem;
+  line-height: 4rem;
+  padding: 0 3rem;
+}
+
+/*# sourceMappingURL=about-me.css.map */

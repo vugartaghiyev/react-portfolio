@@ -1,0 +1,101 @@
+@media screen and (max-width: 1366px) {
+  html {
+    font-size: 9px !important;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  html {
+    font-size: 8px !important;
+  }
+  //   Initial
+  .Initial {
+    &__Content {
+      padding-top: 20rem;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  //   Header
+  .Header {
+    &__Menu {
+      position: absolute;
+      top: 100%;
+      width: 100%;
+      background: var(--main-color);
+      flex-direction: column;
+      padding: 0;
+      display: none;
+
+      &-Item {
+        margin: 0;
+        &:hover {
+          color: white;
+        }
+      }
+
+      a {
+        color: white;
+        padding: 1rem;
+        width: 100%;
+        &:hover {
+          color: var(--main-color);
+          background: white;
+          transform: scale(1.05);
+          -webkit-transform: scale(1.05);
+          -moz-transform: scale(1.05);
+          -ms-transform: scale(1.05);
+          -o-transform: scale(1.05);
+        }
+      }
+    }
+
+    &__Menu-Icon {
+      display: block;
+    }
+  }
+
+  //   Initial
+  .Initial {
+    &__Content {
+      padding-top: 18rem;
+
+      &-Left {
+        width: 100%;
+      }
+      &-Right {
+        display: none;
+      }
+    }
+  }
+
+  // About me
+
+  .About-Me {
+    flex-direction: column;
+
+    &__Pic {
+      width: 100%;
+      padding: 0 4rem;
+    }
+    &__Text {
+      width: 100%;
+      padding: 0 4rem;
+    }
+  }
+
+  // Contact
+
+  .Contact {
+    flex-direction: column;
+
+    &__Text {
+      width: 100%;
+    }
+
+    &__Inputs {
+      width: 100%;
+    }
+  }
+}
