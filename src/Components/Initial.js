@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Header from "./Header";
-import initialPic from "../Icons/InitialPic.svg";
+import initialPic from "../images/InitialPic.jpg";
 import linkedin from "../Icons/linkedin.svg";
 import facebook from "../Icons/facebook.svg";
 import instagram from "../Icons/instagram.svg";
@@ -29,9 +29,7 @@ const Initial = () => {
             Taghiyev
           </h1>
           <h2 className="Initial__Content-Job">Front end developer</h2>
-          <p className="Initial__Content-Desc">
-            If you need a website contact me
-          </p>
+          <p className="Initial__Content-Desc">Take a look at my CV</p>
           <a className="Initial__Content-Cv" href={resume} title="" download>
             Download my CV
           </a>
@@ -42,13 +40,13 @@ const Initial = () => {
       </div>
       <div className="Initial__Media">
         <a
-          href="https://github.com/VuqarTagiyev"
+          href="https://github.com/vugartaghiyev"
           className="Initial__Media-Item"
         >
           <img src={github} alt=""></img>
         </a>
         <a
-          href="https://www.linkedin.com/in/vuqar-tagiyev-6b0291192/"
+          href="https://www.linkedin.com/in/vugartaghiyev/"
           className="Initial__Media-Item"
         >
           <img src={linkedin} alt=""></img>
@@ -72,13 +70,13 @@ const Initial = () => {
           <img src={twitter} alt=""></img>
         </a>
       </div>
-      {!scroll ? (
+      {/* {!scroll ? (
         <div className="Scroll__Container">
           <div className="Scroller"></div>
         </div>
       ) : (
         ""
-      )}
+      )} */}
     </section>
   );
 };

@@ -8,7 +8,7 @@ const Skill = ({ icon, name, skillLink }) => {
       <h5 className="Skill__Name">{name}</h5>
       <div className="Skill__Hover">
         <div className="Skill__Hover-Content">
-          What is this skill?
+          About this skill
           <a href={skillLink} target="blank">
             <img src={link} alt="" />
           </a>

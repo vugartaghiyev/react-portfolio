@@ -51,7 +51,8 @@
 
     &__Name {
       font-size: 3.2rem;
-      color: var(--main-color);
+      color: black;
+      text-shadow: -2px -2px 1px var(--main-color);
       font-weight: 900;
       text-transform: uppercase;
       padding-top: 1.5rem;
@@ -59,8 +60,14 @@
     }
 
     &__Tool {
-      margin: 5px 0;
+      padding: 2px 10px;
       font-size: 1.6rem;
+      color: white;
+      background: black;
+      width: fit-content;
+      margin: 2px 0;
+      border-radius: 4px;
+      font-weight: 300;
     }
 
     &__Link {
@@ -72,11 +79,12 @@
       text-align: center;
       text-decoration: none;
       border-radius: 0.5rem;
+      background: var(--main-color);
       -webkit-border-radius: 0.5rem;
       -moz-border-radius: 0.5rem;
       -ms-border-radius: 0.5rem;
       -o-border-radius: 0.5rem;
-      color: var(--main-color);
+      color: white;
       margin-top: 2rem;
       transition: 0.2s ease-in-out;
       -webkit-transition: 0.2s ease-in-out;
@@ -85,7 +93,7 @@
       -o-transition: 0.2s ease-in-out;
       &:hover {
         transform: scale(1.1);
-        color: rgba(0, 0, 0, 0.5);
+        color: white;
         background: var(--main-color);
         -webkit-transform: scale(1.1);
         -moz-transform: scale(1.1);
@@ -105,7 +113,7 @@
         position: absolute;
         top: 0;
         left: 0;
-        background: rgba(0, 0, 0, 0.7);
+        background: rgba(255, 255, 255, 0.9);
         transform: translateX(-100%);
         -webkit-transform: translateX(-100%);
         -moz-transform: translateX(-100%);
@@ -124,7 +132,7 @@
         position: absolute;
         top: 0;
         right: 0;
-        background: rgba(0, 0, 0, 0.7);
+        background: rgba(255, 255, 255, 0.9);
         transform: translateX(100%);
         -webkit-transform: translateX(100%);
         -moz-transform: translateX(100%);

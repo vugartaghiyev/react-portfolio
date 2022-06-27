@@ -1,5 +1,4 @@
 .Initial {
-  height: 100vh;
   position: relative;
   &__Content {
     display: flex;
@@ -11,12 +10,28 @@
     }
     &-Right {
       width: 50%;
+      display: flex;
+
+      flex-direction: column;
+      align-items: flex-end;
       img {
-        width: 100%;
-        animation-name: initial-img;
-        animation-duration: 2s;
-        animation-iteration-count: infinite;
-        animation-direction: alternate;
+        width: 400px;
+        height: 400px;
+        box-shadow: inset 5px 5px 5px 5px black;
+        border-radius: 50%;
+        opacity: 1;
+        // animation-name: initial-img;
+        // animation-duration: 2s;
+        // animation-iteration-count: infinite;
+        // animation-direction: alternate;
+
+        &:after {
+          content: "";
+          width: 400px;
+          height: 400px;
+          transform: translate(50px, 50px);
+          background: black;
+        }
       }
 
       @keyframes initial-img {
@@ -39,8 +54,8 @@
 
     &-Hello {
       font-family: "Staatliches", cursive;
-      font-size: 7rem;
-      letter-spacing: 0.8rem;
+      font-size: 4rem;
+      letter-spacing: 0.5rem;
     }
 
     &-Owner {
@@ -55,14 +70,14 @@
     }
 
     &-Job {
-      font-size: 5rem;
-      margin-top: 1rem;
+      font-size: 4rem;
+      margin-top: 0;
     }
 
     &-Desc {
       color: #8b95a1;
       font-size: 2rem;
-      margin-top: 1rem;
+      margin-top: 3rem;
       max-width: 60rem;
     }
 
@@ -84,7 +99,7 @@
       background: var(--main-color);
       border: none;
       outline: none;
-      margin-top: 3rem;
+      margin-top: 1.5rem;
       transition: 0.2s ease-in;
       -webkit-transition: 0.2s ease-in;
       -moz-transition: 0.2s ease-in;
@@ -111,10 +126,7 @@
   }
 
   &__Media {
-    position: absolute;
-    bottom: 20px;
-    left: 3rem;
-
+    margin-top: 20px;
     &-Item {
       margin-right: 5px;
       cursor: pointer;
@@ -125,7 +137,7 @@
       -ms-transition: 0.2s;
       -o-transition: 0.2s;
       img {
-        width: 20px;
+        width: 40px;
       }
 
       &:hover {
